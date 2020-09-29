@@ -1,0 +1,29 @@
+.task_lists_box{
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #dddddd;
+}
+
+.center_element{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper_message{
+    text-align: center;
+}
+
+.title_message{
+    font-size: 18px;
+    font-weight: 500px;
+    color: #000;
+}
+
+.subtitle_message{
+    font-size: 14px;
+    font-weight: 300px;
+    color: #000;
+}
