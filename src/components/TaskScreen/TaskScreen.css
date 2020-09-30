@@ -1,0 +1,14 @@
+.lists_show{
+
+}
+
+nav{
+    height: 60px;
+    background-color: aquamarine;
+    text-align: left;
+    display: flex;
+}
+
+.title-page{
+    padding: 0px 20px;
+}

@@ -11,6 +11,11 @@ interface Props {
 
 function TaskLists({tasks, loading}: Props): ReactElement {
 
+    const sortPinnedTasks = [
+        ...tasks.filter(task => task.pinned),
+        ...tasks.filter(task => !task.pinned)
+    ]
+
     if(loading){
         return (
             <div className="task_lists_box">
@@ -40,7 +45,7 @@ function TaskLists({tasks, loading}: Props): ReactElement {
     return (
         <div className="task_lists_box">
             {
-                tasks.map(task => (
+                sortPinnedTasks.map(task => (
                     <TaskItem task={task?.title} pinned={task.pinned} archived={task.archived} />
                 ))
             }

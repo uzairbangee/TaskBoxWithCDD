@@ -33,3 +33,15 @@ export const TasksListEmpty = () => {
         <TaskLists tasks={[]} loading={false}/>
     )
 }
+
+export const TasksListPinned = () => {
+    const new_tasks = [
+        ...tasks,
+        {title: "Install App", pinned: true, archived: false},
+        {title: "Implement PWA", pinned: false, archived: false},
+        {title: "Review Changes", pinned: true, archived: true},
+    ]
+    return (
+        <TaskLists tasks={new_tasks} loading={false}/>
+    )
+}
