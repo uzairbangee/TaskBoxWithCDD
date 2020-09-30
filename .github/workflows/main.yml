@@ -21,7 +21,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        
+      - run: yarn
       - uses: chromaui/action@v1
         # options required to the GitHub chromatic action
         with:
@@ -29,6 +29,7 @@ jobs:
           # refer to https://www.learnstorybook.com/intro-to-storybook/react/en/deploy/
           projectToken: q2ipz2f62q8
           token: ${{ secrets.GITHUB_TOKEN }}
+           
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
