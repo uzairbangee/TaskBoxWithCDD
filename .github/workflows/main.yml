@@ -27,7 +27,7 @@ jobs:
         with:
           # our project token, to see how to obtain it
           # refer to https://www.learnstorybook.com/intro-to-storybook/react/en/deploy/
-          projectToken: ${{ secrets.CHROMATIC_TOKEN }}
+          projectToken: q2ipz2f62q8
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # Runs a single command using the runners shell
