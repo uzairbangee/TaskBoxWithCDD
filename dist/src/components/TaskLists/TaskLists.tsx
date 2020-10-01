@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
 import TaskItem from '../TaskItem/TaskItem'
-import {task} from "../../Types";
+// import {task} from "../../Types";
 import Loading from '../Loading/Loading';
 import "./TaskLists.css";
 
