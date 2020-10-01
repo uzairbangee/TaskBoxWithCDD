@@ -1,0 +1,17 @@
+.task_item_box{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.task_outer{
+    padding: 0px 20px;
+    border-bottom: 1px solid #dddddd;
+    background-color: #fff;
+}
+
+.task_title{
+    width: 100%;
+}
